@@ -3,54 +3,45 @@
    <title>GHC Resources</title>
    <style>
       * {
-      box-sizing: border-box;
-      font-family: 'Montserrat', sans-serif;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
       }
       body {
-      margin: 0;
+        margin: 0;
       }
       #main {
-      display: flex;
-      min-height: calc(100vh - 40vh);
+        display: flex;
+        min-height: calc(100vh - 40vh);
       }
       #main > article {
-      flex: 1;
+        margin-right: 15em;
+        margin-left: 15em;
       }
-      #main > nav,
-      #main > aside {
-      flex: 0 0 20vw;
-      background: white;
-      }
-      #main > nav {
-      order: -1;
-      }
-      header, footer, article, nav, aside {
-      padding: 1em;
+      header, footer, article {
+        padding: 1em;
       }
       header, footer {
-      background: white;
-      height: 20vh;
+        background: white;
+        height: 20vh;
       }
       div {
-      padding:10px 0 10px 0;
+        padding:10px 0 10px 0;
       }
       .new-color {
-      color:#A9A9A9;
+        color:#A9A9A9;
       }
       @media only screen and (max-width: 600px) {
-        header, footer, article, nav {
-          padding: 15px;
+        header, footer {
+          padding: 4em;
+          height: 0;
+          padding: 0;
         }
         header {
           width: 7.5vh;
           height: auto;
         }
-        aside {
-          padding: 0;
-          margin: 18px;
-        }
-        #main > aside, #main > nav {
-          flex: inherit;
+        #main > article {
+          margin: 0;
         }
       }
    </style>
@@ -95,8 +86,6 @@
             <div>Various episodes. <i>The Marvelous Mrs. Maisel.</i> Amazon Video. 29 Nov. 2017. Television. </div>
          </div>
       </article>
-      <nav></nav>
-      <aside></aside>
    </div>
    <footer></footer>
 </body>
